@@ -1,11 +1,11 @@
 //Selectable Element Host and Join
 javascript: (function() {
     const elements = [
-        { name: "光 (Light)", symbol: "光", id: 1 },
+        { name: "火 (Fire)", symbol: "火", id: 1 },
         { name: "水 (Water)", symbol: "水", id: 2 },
-        { name: "風 (Wind)", symbol: "風", id: 3 },
-        { name: "火 (Fire)", symbol: "火", id: 4 },
-        { name: "土 (Earth)", symbol: "土", id: 5 },
+        { name: "土 (Earth)", symbol: "土", id: 3 },
+        { name: "風 (Wind)", symbol: "風", id: 4 },
+        { name: "光 (Light)", symbol: "光", id: 5 },
         { name: "闇 (Dark)", symbol: "闇", id: 6 },
         { name: "Host", symbol: "主", id: 7 }
     ];
@@ -24,7 +24,7 @@ javascript: (function() {
             let symbolsToCopy = '';
                 for (let i = 0; i < elements.length - 1; i++) {
                     if (i !== selectedHostElementIndex - 1) {
-                        symbolsToCopy += elements[i].symbol + '\n';
+                        symbolsToCopy += elements[i].symbol;
                     }
                 }
             if (selectedHostElementIndex !== null && selectedHostElementIndex >= 1 && selectedHostElementIndex <= 6) {
@@ -52,5 +52,5 @@ javascript: (function() {
     }
 })();
 
-//Quick Element Join
+//Quick Element Join, Just change the element to your choice.
 javascript: navigator.clipboard.writeText('闇');null;
